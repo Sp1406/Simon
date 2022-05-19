@@ -82,3 +82,15 @@ body {
     display: inline;
   }
 }
+
+@media screen and (max-device-width: 768px) and (orientation: landscape) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-column-gap: 0px;
+    width: 100%;
+  }
+  .btn {
+    display: inline-block;
+  }
+}
