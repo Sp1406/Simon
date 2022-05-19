@@ -31,6 +31,14 @@ $(".btn").on("click", function () {
   checkAnswer(userClickedPattern.length-1)
 });
 
+$(".mobile-playAgain").on("click", function () {
+  if(!started) {
+    $("#level-title").text("Level "+level)
+    nextSequence()
+    started = true;
+  }
+})
+
 function playSound(name) {
   var sound = new Audio("sounds/" + name + ".mp3");
   sound.play();
@@ -64,7 +72,7 @@ function checkAnswer(currentLevel) {
     setTimeout(function() {
       $("body").removeClass("game-over")
     }, 200)
-    $("#level-title").text("Game Over, Press Any Key to Restart")
+    $("#level-title").text("Game Over, Press Any Key to Restart or the Play Button to Restart")
     startOver();
   }
 }

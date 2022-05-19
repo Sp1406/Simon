@@ -51,3 +51,34 @@ body {
   box-shadow: 0 0 20px white;
   background-color: grey;
 }
+
+
+.mobile-playAgain {
+  font-size:15px;
+  font-family:'Press Start 2P', cursive;
+  width:140px;
+  height:50px;
+  border-width:1px;
+  color:#fff;
+  border-color:#566963;
+  font-weight:bold;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  border-bottom-left-radius:5px;
+  border-bottom-right-radius:5px;
+  box-shadow:inset 0px 1px 3px 0px #91b8b3;
+  text-shadow:inset 0px -1px 0px #2b665e;
+  background:linear-gradient(#768d87, #6c7c7c);
+  display: none;
+}
+
+.mobile-playAgain:hover {
+  background: linear-gradient(#6c7c7c, #768d87);
+}
+              
+
+@media screen and (max-width: 700px) {
+  .mobile-playAgain {
+    display: inline;
+  }
+}
